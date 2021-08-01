@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Overtime","Creating availability","SUCCESS","2021-07-07T13:21:06.3060669+01:00[Europe/London]","0.0","4.69"
+"Overtime","Editing availability","SUCCESS","2021-07-07T13:21:11.0228226+01:00[Europe/London]","0.0","4.28"
+"Overtime","Deleting availability","SUCCESS","2021-07-07T13:21:15.323029+01:00[Europe/London]","0.0","2.94"
+"Overtime","Create an overtime reason","SUCCESS","2021-07-07T13:21:18.2916518+01:00[Europe/London]","0.0","3.34"

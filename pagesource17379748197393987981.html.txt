@@ -1,0 +1,581 @@
+<html class=" boxsizing"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge; IE=8; IE=9; IE=10; IE=11; Chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Details - My Working Life</title>
+
+    <link rel="stylesheet" href="/lib/air-datepicker/dist/css/datepicker.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/Styles/structure/jquery-ui.css">
+
+    <script src="/lib/jquery/jquery.min.js">
+    </script>
+    <script src="/lib/jquery-ui-dist/jquery-ui.min.js">
+    </script>
+    <script src="/js/modernizr-custom.js">
+    </script>
+    <script src="/js/jquery.unobtrusive-ajax.min.js">
+    </script>
+    <script src="/lib/jquery-validation/jquery.validate.min.js">
+    </script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+    </script>
+    <script src="/lib/moment/moment.min.js">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js">
+    </script>
+    <script type="text/javascript">var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){function n(e){t[e]=function(){var n=arguments;t.queue.push(function(){t[e].apply(t,n)})}}var t={config:e};t.initialize=!0;var i=document,a=window;setTimeout(function(){var n=i.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js",i.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{t.cookie=i.cookie}catch(e){}t.queue=[],t.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var s="Track"+r[0];if(n("start"+s),n("stop"+s),n("addTelemetryInitializer"),n("setAuthenticatedUserContext"),n("clearAuthenticatedUserContext"),n("flush"),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var o=a[r];a[r]=function(e,n,i,a,s){var c=o&&o(e,n,i,a,s);return!0!==c&&t["_"+r]({message:e,url:n,lineNumber:i,columnNumber:a,error:s}),c},e.autoExceptionInstrumented=!0}return t}(
+{
+  instrumentationKey: '5a052d3a-1326-44ac-bb25-1cdfef738512'
+});
+
+window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
+
+</script>
+<script src="https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js"></script></head>
+<body>
+
+    <div id="jsoverlay" style="display: none">
+        <div class="progressSpinner" style="display: none;"></div>
+    </div>
+
+    <div class="navbar-fixed">
+        <nav class="clearfix">
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="nav-inner">
+    <li class="logo-nav">
+        <a class="brand-logo" href="/">
+            <!--?xml version="1.0" encoding="utf-8" ?-->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 197.3 36.7" width="120" height="50" xml:space="preserve">
+            <g>
+            <path style="fill: #FFFFFF;" d="M77.6,12.7v-0.9h-3.5V28h3.5l0-10.7c0-1.2,1.7-2.3,3.5-2.3c1.6,0,3.2,1,3.2,2.3V28h3.5V17.3c0-1.3-0.6-2.7-1.6-3.7C84.4,11.1,79.5,11.3,77.6,12.7z"></path>
+
+            <path style="fill: #FFFFFF;" d="M64.4,11.5c-4.7,0-8.6,3.8-8.6,8.6c0,4.7,3.8,8.6,8.6,8.6c4.7,0,8.6-3.9,8.6-8.6C72.9,15.4,69.1,11.5,64.4,11.5z M64.4,25.4c-2.9,0-5.3-2.4-5.3-5.3c0-2.9,2.4-5.3,5.3-5.3c2.9,0,5.2,2.4,5.2,5.3C69.6,23,67.3,25.4,64.4,25.4z"></path>
+
+            <path style="fill: #FFFFFF;" d="M48.4,11.7c-0.7,0-3.1-0.5-5.5,1.9c-1.8-2.5-6.5-2.5-9.2-1.1c-2.7,1.5-2.9,4.2-2.9,4.2l0,11.2l3.6,0.1l0-10.7c0-1.2,1.7-2.3,3.5-2.3c1.6,0,3.1,1,3.1,2.3V28h3.5V17.3c0-1.3,1.8-2.4,3.6-2.4c1.6,0,3.1,1,3.1,2.4V28h3.5l0.1-10.7C54.5,14.2,51.8,11.8,48.4,11.7z"></path>
+
+            <path style="fill: #FFFFFF;" d="M193.6,11.9l-4,11.7l-4.4-11.7h-3.5h-0.3l0.3,0.7l6.2,16l-0.5,1.6c-0.6,1.8-3,3.2-4.7,3.1l0.1,3.3c4.9-0.3,7.4-3.6,8.4-6.6l6.1-18.2H193.6z"></path>
+
+            <path style="fill: #FFFFFF;" d="M144.5,11.6h-0.2c-4.5,0-8.1,3.7-8.1,8.5c0,4.7,3.6,8.6,8.1,8.6h0.2c2.5,0,5.5-0.5,6.9-2.4l-2.5-2.2c-0.9,1.2-2.9,1.3-4.5,1.3h-0.2c-2.3,0-3.8-1.7-4.2-3.9h4.4h4.5h3.2c0.1-0.5,0.1-0.9,0.1-1.4C152.3,15.5,148.8,11.8,144.5,11.6z M144.5,18.2h-4.3c0.6-2,2-3.5,4.1-3.5h0.2c2,0.1,3.7,1.6,4.4,3.5H144.5z"></path>
+
+            <path style="fill: #FFFFFF;" d="M104.3,16.7c-1.2-2.9-3.9-5-7.1-5.1h-0.3c-4.4,0-8.1,3.7-8.1,8.5c0,4.7,3.6,8.6,8.1,8.6h0.3c2.5,0,5.5-0.5,6.9-2.4l-2.5-2.2c-0.8,1.2-2.9,1.3-4.4,1.3h-0.3c-2.3,0-3.7-1.7-4.2-3.9h4.5h4.5h2.6h0.6c0.1-0.5,0.1-0.9,0.1-1.4C104.9,18.9,104.7,17.8,104.3,16.7z M97.1,18.2h-4.3c0.5-2,2-3.5,4-3.5h0.3c2,0.1,3.7,1.6,4.3,3.5H97.1z"></path>
+
+            <path style="fill: #FFFFFF;" d="M180.3,13.6c-1.8-2.5-6.8-2.3-8.7-0.9v-0.9h-3.5V28h3.6V17.3c0-1.2,1.7-2.3,3.4-2.3c1.6,0,3.2,1,3.2,2.3V28h3.3h0.2V17.3c0-0.5-0.1-1-0.2-1.5C181.4,15,180.9,14.2,180.3,13.6z"></path>
+
+            <path style="fill: #FFFFFF;" d="M157,12.7v-0.9h-3.5V28h3.5l0.1-10.7c0-1.2,1.7-2.3,3.4-2.3c1.6,0,3.2,1,3.2,2.3V28h3.5V17.3c0-1.3-0.6-2.7-1.6-3.7C163.8,11.1,158.8,11.3,157,12.7z"></path>
+
+            <path style="fill: #FFFFFF;" d="M127.9,11.7c-0.5-0.1-1.1-0.1-1.6-0.1c-0.8,0-1.5,0.1-2.2,0.2h-3.5l0,24.8h3.5l0-8.1c0.7,0.2,1.5,0.3,2.2,0.3c0.6,0,1.1-0.1,1.6-0.2c4.3-0.7,7.5-4.3,7.5-8.4C135.4,16,132.2,12.4,127.9,11.7z M127.9,25.1c-0.5,0.1-1.1,0.2-1.6,0.2c-0.8,0-1.6-0.2-2.2-0.5v-9.7c0.7-0.3,1.4-0.5,2.2-0.5c0.6,0,1.1,0.1,1.6,0.2c2.3,0.7,3.9,2.7,3.9,5.1C131.8,22.4,130.2,24.4,127.9,25.1z"></path>
+
+            <path style="fill: #FFFFFF;" d="M111.8,23.6l-4.4-11.7h-3.1h-0.7l0.7,1.7l5.9,14.9l-0.6,1.6c-0.6,1.8-3,3.2-4.7,3.1l0.1,3.3c4.9-0.3,7.4-3.6,8.4-6.6l6.1-18.2h-3.8L111.8,23.6z"></path>
+
+            <path style="fill: #FFFFFF;" d="M31.2,10C31.2,10,31.2,10,31.2,10c0.4-0.1,0.9-0.2,1.3-0.2c0.3,0,0.5-0.1,0.8-0.1c0,0,0,0,0,0c0,0,0,0,0,0c-0.6-0.5-0.8-0.7-1.4-1.4c0.1-0.9-0.3-2.4-0.7-3.5c-1.4-4-6.4-4.8-9.6-2.7c-1.8,1.2-2.7,3.5-2.4,5.3C13.1,7.6,6.9,5.6,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0.3,0.1,0.7,0.2,1.2C-0.4,6.4,0.4,10,1.8,12.5c0,0-0.1-0.1-0.1-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0.1,0.1,0.1c0.1,0.2,0.2,0.3,0.3,0.5c0,0.1,0.1,0.1,0.1,0.2c0.1,0.2,0.2,0.3,0.3,0.5c0.1,0.1,0.1,0.1,0.2,0.2c0.1,0.2,0.2,0.3,0.4,0.4c0.1,0.1,0.1,0.1,0.2,0.2c0.1,0.1,0.3,0.3,0.4,0.4c0.1,0.1,0.1,0.1,0.2,0.2c0,0,0,0,0,0c0.8,3.3,3,4.3,5.2,5.6c0,0-0.1,0-0.1,0c0.1,0.1,0.2,0.1,0.3,0.2c-0.4,0.1-0.8,0.2-1.2,0.3c3.7,3,7.7,3.4,11,3.8c-2.2,2.9-5.1,4.9-7.1,5.8c0.7,0.2,1.2,0.3,1.7,0.4c-0.4,0.2-0.8,0.4-1.2,0.5c1.3,1.3,2.6,1.9,3.8,2.2c-0.2,0.1-0.4,0.2-0.6,0.3c1.2,0.6,2.1,1.1,3.7,0.9c-0.2,0.1-0.4,0.2-0.7,0.4c1.6,1.4,2.7,1.4,3.6,1c1.4,1.2,5.3-0.3,5.5-2.1v-1.8v-1v-7.6v-0.7c0,0,0,0,0,0l0-8.2c0-0.1,0-0.1,0-0.2c0-0.1,0-0.1,0-0.2c0,0,0,0,0-0.1c0.1-0.3,0.2-0.8,0.5-1.4c0-0.1,0.1-0.1,0.1-0.2c0-0.1,0.1-0.1,0.1-0.2c0-0.1,0.1-0.2,0.1-0.2c0.5-0.8,1.4-1.7,2.7-2.4C31,10.1,31.1,10,31.2,10z M29,7.7c-0.4,0-0.7-0.3-0.7-0.7c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C29.8,7.4,29.4,7.7,29,7.7z"></path>
+
+                </g>
+                </svg>
+        </a>
+    </li>
+    <li class="working-life-nav">
+
+            <span class="mwl-title">
+                My Working
+                Life
+            </span>
+    </li>
+    <li style="margin-bottom: 40px;">
+        
+    </li>
+    <li class="user-details-nav" style="margin-top: 10px;">
+            <div>
+                <a class="nav-user-wrapper" title="Manage" href="/Manage">
+                    <div class="circular-portrait">
+                        <img src="https://images.moneypenny.co.uk/Display/Context?context=sta-154&amp;size=80">
+                    </div>
+                    <span class="hr-user-name">Naomi Lloyd</span>
+                </a>
+
+
+                <form method="post" id="logoutForm" action="/Account/Logout">
+                    <button type="submit" class="btn btn-logout">
+                        Log out
+                    </button>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8C86VRlamY9LuDBhq5TV3fetp1T8m5kPLvuGe1hLD7kRkuBkYOWtUdtUjc72slelda-IhpzHpov7PL_Ju7IBhnI4be0MoLetZSPtbgYicgJAnMW61btzLH5rSih16Wfv9d47j_HR5mDDKQPAxSq18r8bSO5IIAKYwH-aFt8vq2RnwAzD_y0Ly5VdJV1bj1YjRQ"></form>
+            </div>
+    </li>
+</ul>
+
+<script>
+    $(function () {
+        $('.toggle').change(function () {
+            const self = $(this);
+            const url = self.data('url');
+            const id = self.attr('id');
+            $.ajax({
+                url: url,
+                data: { id: id },
+                type: 'POST',
+                success: function (e) {
+                    window.location.reload();
+                }
+            });
+        });
+    });
+
+    function success(data) {
+        window.location.reload();
+    }
+
+
+</script>
+            </div>
+        </nav>
+    </div>
+
+    
+
+
+<div class="container">
+    <div class="breadcrumbs-wrapper">
+        <a href="/">&lt; Back</a>
+        
+    </div>
+
+    <input data-val="true" data-val-number="The field Number of hours per week must be a number." id="MyOperator_HoursWorked" name="MyOperator.HoursWorked" type="hidden" value="">
+
+    <form id="my-details-form" method="post" action="/MyDetails/Save" novalidate="novalidate">
+        <fieldset>
+            <input type="hidden" id="MyOperator_Id" name="MyOperator.Id" value="154">
+            <input type="hidden" data-val="true" data-val-required="The User Id field is required." id="Person_UserId" name="Person.UserId" value="198">
+            <div class="col-quart user-details-col">
+                <h3>Your details</h3>
+                <div class="pa-picture-wrapper">
+                    <div class="pa-picture-inner">
+                        <label for="pa-picture"></label>
+                        <img id="pa-picture" src="https://images.moneypenny.co.uk/Display/Context?Context=sta-154&amp;size=280" style="padding-left: 5%; width: 90%;" alt="PA Picture">
+                    </div>
+                </div>
+
+                <div class="pa-user-id">
+                    User Id: 198
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_Title">Title</label>
+                    <select data-val="true" data-val-length="The field Title must be a string with a maximum length of 50." data-val-length-max="50" id="Person_Title" name="Person.Title">
+                        <option>Please select one</option>
+                    <option>Mr</option>
+<option selected="selected">Mrs</option>
+<option>Miss</option>
+<option>Ms</option>
+<option>Rev</option>
+<option>Dr</option>
+</select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_Name">Name</label>
+                    <input type="text" data-val="true" data-val-length="The field Name must be a string with a maximum length of 255." data-val-length-max="255" id="Person_Name" maxlength="255" name="Person.Name" value="Naomi Lloyd (DO NOT USE)">
+                </div>
+
+                <div class="form-group">
+                    <label for="MyOperator_DepartmentName">DepartmentName</label>
+                    <input readonly="" class="disabled-input" type="text" id="MyOperator_DepartmentName" name="MyOperator.DepartmentName" value="PA">
+                </div>
+
+                
+
+                <div class="form-group">
+                    <label for="Person_Address">Address</label>
+                    <textarea rows="4" id="Person_Address" name="Person.Address">Search Results
+Western Gateway, 
+Wrexham </textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_Postcode">Postcode</label>
+                    <input rows="4" type="text" data-val="true" data-val-length="The field Postcode must be a string with a maximum length of 8." data-val-length-max="8" id="Person_Postcode" maxlength="8" name="Person.Postcode" value="LL13 7ZB">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_CarShareOptIn">Join car share scheme</label>
+                    <input rows="4" type="checkbox" data-val="true" data-val-required="The Join car share scheme field is required." id="Person_CarShareOptIn" name="Person.CarShareOptIn" value="true">
+                </div>
+
+                <div class="form-group">
+                    <a href="/MyDetails/CarShare"> Open Car Share </a>
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_TelNumber">Home telephone</label>
+                    <input type="text" data-val="true" data-val-length="The field Home telephone must be a string with a maximum length of 50." data-val-length-max="50" id="Person_TelNumber" maxlength="50" name="Person.TelNumber" value="">
+                </div>
+
+                <div class="form-group">
+                    <label>Mobile</label>
+                    <input type="text" data-val="true" data-val-length="The field Mobile must be a string with a maximum length of 50." data-val-length-max="50" id="Person_MobileNumber" maxlength="50" name="Person.MobileNumber" value="">
+                </div>
+                <div class="form-group">
+                    <label for="Person_HomeEmail">Home email</label>
+                    <input type="text" data-val="true" data-val-length="The field Home email must be a string with a maximum length of 255." data-val-length-max="255" id="Person_HomeEmail" maxlength="255" name="Person.HomeEmail" value="test@test.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_WorkEmail">Moneypenny Email</label>
+                    <input type="text" data-val="true" data-val-length="The field Moneypenny Email must be a string with a maximum length of 255." data-val-length-max="255" id="Person_WorkEmail" maxlength="255" name="Person.WorkEmail" value="Daniel.morgan@moneypenny.co.uk" readonly="true" class="disabled-input">
+                </div>
+
+                <div class="form-group">
+                    <label>NI Number</label>
+                    <input type="text" data-val="true" data-val-length="The field NI Number must be a string with a maximum length of 50." data-val-length-max="50" id="Person_NiNumber" maxlength="50" name="Person.NiNumber" value="EJ 02 45 40 A" readonly="true" class="disabled-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_DateOfBirth">Date of birth</label>
+                    <input type="date" id="Person_DateOfBirth" name="Person.DateOfBirth" value="1984-03-18">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_PassportNumber">Passport number</label>
+                    <input type="text" data-val="true" data-val-length="The field Passport number must be a string with a maximum length of 255." data-val-length-max="255" id="Person_PassportNumber" maxlength="255" name="Person.PassportNumber" value="" readonly="true" class="disabled-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_Allergies">Any medical conditions or allergies?</label>
+                    <textarea rows="4" id="Person_Allergies" name="Person.Allergies"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_AdditionalNotes">Additional notes</label>
+                    <textarea rows="4" id="Person_AdditionalNotes" name="Person.AdditionalNotes"></textarea>
+                </div>
+
+            </div>
+            <div class="col-quart user-details-col">
+                <h3>Emergency contact 1</h3>
+
+                <div class="form-group">
+                    <label for="Person_EmergencyContact">Name</label>
+                    <input type="text" data-val="true" data-val-length="The field Name must be a string with a maximum length of 200." data-val-length-max="200" id="Person_EmergencyContact" maxlength="200" name="Person.EmergencyContact" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_EmergencyContactNumber">Home telephone</label>
+                    <input type="text" data-val="true" data-val-length="The field Home telephone must be a string with a maximum length of 50." data-val-length-max="50" id="Person_EmergencyContactNumber" maxlength="50" name="Person.EmergencyContactNumber" value="">
+                </div>
+
+                <div class="form-group">
+                    <label>Mobile</label>
+                    <input type="text" data-val="true" data-val-length="The field Mobile must be a string with a maximum length of 50." data-val-length-max="50" id="Person_EmergencyContactMob" maxlength="50" name="Person.EmergencyContactMob" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_EmergencyContactRelation">Relation</label>
+                    <input type="text" data-val="true" data-val-length="The field Relation must be a string with a maximum length of 255." data-val-length-max="255" id="Person_EmergencyContactRelation" maxlength="255" name="Person.EmergencyContactRelation" value="">
+                </div>
+
+                <br><br><br>
+
+                <h3>Emergency contact 2</h3>
+
+                <div class="form-group">
+                    <label for="Person_EmergencyContact1">Name</label>
+                    <input type="text" data-val="true" data-val-length="The field Name must be a string with a maximum length of 200." data-val-length-max="200" id="Person_EmergencyContact1" maxlength="200" name="Person.EmergencyContact1" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_EmergencyContactNumber1">Home telephone</label>
+                    <input type="text" data-val="true" data-val-length="The field Home telephone must be a string with a maximum length of 50." data-val-length-max="50" id="Person_EmergencyContactNumber1" maxlength="50" name="Person.EmergencyContactNumber1" value="">
+                </div>
+
+                <div class="form-group">
+                    <label>Mobile</label>
+                    <input type="text" data-val="true" data-val-length="The field Mobile must be a string with a maximum length of 50." data-val-length-max="50" id="Person_EmergencyContactMob1" maxlength="50" name="Person.EmergencyContactMob1" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_EmergencyContactRelation1">Relation</label>
+                    <input type="text" data-val="true" data-val-length="The field Relation must be a string with a maximum length of 255." data-val-length-max="255" id="Person_EmergencyContactRelation1" maxlength="255" name="Person.EmergencyContactRelation1" value="">
+                </div>
+                <br><br><br>
+                <h3>Next of Kin</h3>
+                <div class="form-group">
+                    <label for="Person_NextOfKin">Next of Kin</label>
+                    <input type="text" id="Person_NextOfKin" name="Person.NextOfKin" value="">
+                </div>
+
+            </div>
+
+
+            <div class="col-quart user-details-col">
+
+                <h3>Bank Details</h3>
+
+                <div class="form-group">
+                    <label for="Person_BankName">Bank Name</label>
+                    <input type="text" data-val="true" data-val-length="The field Bank Name must be a string with a maximum length of 200." data-val-length-max="200" id="Person_BankName" maxlength="200" name="Person.BankName" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_AccountName">Account Name</label>
+                    <input type="text" id="Person_AccountName" name="Person.AccountName" value="" readonly="true" class="disabled-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_AccountNumber">Account number</label>
+                    <input type="text" data-val="true" data-val-length="The field Account number must be a string with a maximum length of 50." data-val-length-max="50" data-val-required="Account Number is required" id="Person_AccountNumber" maxlength="50" name="Person.AccountNumber" value="12345678">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_SortCode">Sort Code</label>
+                    <input type="text" data-val="true" data-val-length="The field Sort Code must be a string with a maximum length of 50." data-val-length-max="50" id="Person_SortCode" maxlength="50" name="Person.SortCode" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_MpAccountNumber">MP Account Number (for accounts only)</label>
+                    <input type="number" id="Person_MpAccountNumber" name="Person.MpAccountNumber" value="" readonly="true" class="disabled-input">
+                </div>
+
+                <div class="form-group" onlyuk="">
+                    <label>Number of hours per week</label>
+                    <input value="25" readonly="" class="disabled-input">
+                </div>
+
+                <div class="form-group" style="display:none">
+                    <label>Show allowance in hours</label>
+                    <input id="showInHoursCheck" class="checkbox" type="checkbox" data-val="true" data-val-required="The Show Allowace In Hours field is required." name="Person.ShowInHours" value="true">
+                </div>
+                <div style="margin-left: 40px; margin-top: 15px;" onlyuk="">
+                    <a class="no-float request-day-link btn-dark-outline" href="/MyDetails/ViewSalaryHistory">View Salary History</a>
+                </div>
+
+                <br><br><br>
+
+                <div id="performance-section">
+                    
+
+
+
+                </div>
+
+            </div>
+
+            <div class="col-quart user-details-col">
+
+                <h3>Other Info</h3>
+                
+                <input type="hidden" id="MyOperator_EmployeesId" name="MyOperator.EmployeesId" value="">
+                <div class="form-group">
+                    <label>Mteam</label>
+                    <input value="0" readonly="" class="disabled-input">
+                </div>
+
+                
+
+                <div class="form-group">
+                    <label>Rita Link</label>
+                    <input readonly="" class="disabled-input" type="text" data-val="true" data-val-length="The field OperatorName must be a string with a maximum length of 50." data-val-length-max="50" id="MyOperator_OperatorName" maxlength="50" name="MyOperator.OperatorName" value="Naomi">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_StartDate">Start date</label>
+                    <input type="date" id="Person_StartDate" name="Person.StartDate" value="2007-05-29" readonly="true" class="disabled-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_ProbationEndDate">Probation End Date</label>
+                    <input type="date" id="Person_ProbationEndDate" name="Person.ProbationEndDate" value="2007-11-30" readonly="true" class="disabled-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_UserLeftDate">Left date</label>
+                    <input type="date" id="Person_UserLeftDate" name="Person.UserLeftDate" value="" readonly="true" class="disabled-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_UserResignDate">Resign date</label>
+                    <input type="date" id="Person_UserResignDate" name="Person.UserResignDate" value="" readonly="true" class="disabled-input">
+                </div>
+
+                
+
+                
+
+                
+
+                <div class="form-group">
+                    <label for="Person_WellnessStartDate">Wellness Start Date</label>
+                    <input type="date" readonly="" id="Person_WellnessStartDate" name="Person.WellnessStartDate" value="2007-05-29" class="disabled-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_SickYearStart">Sick year start</label>
+                    <input class="disabled-input" type="text" readonly="" id="Person_SickYearStart" name="Person.SickYearStart" value="">
+                </div>
+
+                
+
+                <div class="form-group">
+                    <label for="Person_HolidayYearStartDate">Holiday year start date</label>
+                    <input type="date" readonly="" id="Person_HolidayYearStartDate" name="Person.HolidayYearStartDate" value="2007-05-29" class="disabled-input">
+                </div>
+
+                <div class="form-group" style="display:none">
+                    <label>Current Employee</label>
+                    <input id="currentEmployeeCheck" class="checkbox" type="checkbox" checked="checked" data-val="true" data-val-required="The CurrentEmployee field is required." name="Person.CurrentEmployee" value="true">
+                </div>
+
+                <div class="form-group" style="display:none">
+                    <label>Exclude</label>
+                    <input id="excludeCheckBox" class="checkbox" type="checkbox" data-val="true" data-val-required="The Exclude field is required." name="Person.Exclude" value="true">
+
+
+                </div>
+                <div class="form-group" onlyuk="" style="display:none">
+                    <label>Has opted out of WTD?</label>
+                    <input id="wtdCheckBox" class="checkbox" type="checkbox" data-val="true" data-val-required="The Has opted out of WTD? field is required." name="Person.WTDirectiveOptOut" value="true">
+
+                </div>
+                <div>
+                    <input type="hidden" id="MyOperator_Mteam" name="MyOperator.Mteam" value="4371">
+                    <input type="hidden" id="MyOperator_EmployeesId" name="MyOperator.EmployeesId" value="">
+                    <input type="hidden" id="Person_UserReasonForLeaving" name="Person.UserReasonForLeaving" value="0">
+                    <input type="hidden" id="Person_UserComments" name="Person.UserComments" value="">
+                    <input type="hidden" id="Person_WageSlip" name="Person.WageSlip" value="0">
+                    <input type="hidden" id="MyOperator_Ulocation" name="MyOperator.Ulocation" value="0">
+                    <input type="hidden" data-val="true" data-val-required="The ContractSigned field is required." id="Person_ContractSigned" name="Person.ContractSigned" value="True">
+                    <input type="hidden" id="Person_WTDirectiveOptOut" name="Person.WTDirectiveOptOut" value="False">
+                    <input type="hidden" id="Person_WestfieldHealthNo" name="Person.WestfieldHealthNo" value="">
+                    <input type="hidden" data-val="true" data-val-required="The Declared gender field is required." id="Person_Gender" name="Person.Gender" value="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="Person_SpecialNotes" style="display:none">Special Notes</label>
+                    <textarea row="4" id="Person_SpecialNotes" name="Person.SpecialNotes" style="display:none"></textarea>
+                </div>
+                
+                <br>
+                <input class="btn btn-sm detailsBtn" type="submit" value="Update Details" disabled="">
+                <input class="btn cancel-details-btn btn-sm detailsBtn" value="Cancel" onclick="window.location.reload()" disabled="">
+
+            </div>
+        </fieldset>
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8C86VRlamY9LuDBhq5TV3fetp1T8m5kPLvuGe1hLD7kRkuBkYOWtUdtUjc72slelda-IhpzHpov7PL_Ju7IBhnI4be0MoLetZSPtbgYicgJAnMW61btzLH5rSih16Wfv9d47j_HR5mDDKQPAxSq18r8bSO5IIAKYwH-aFt8vq2RnwAzD_y0Ly5VdJV1bj1YjRQ"><input name="Person.CarShareOptIn" type="hidden" value="false"><input name="Person.ShowInHours" type="hidden" value="false"><input name="Person.CurrentEmployee" type="hidden" value="false"><input name="Person.Exclude" type="hidden" value="false"><input name="Person.WTDirectiveOptOut" type="hidden" value="false"></form>
+
+</div>
+
+
+    
+    <div class="progressSpinner" style="display: none;"></div>
+
+<script>
+    $(function () {
+        var $loading = $('.progressSpinner').hide();
+        $(document)
+            .ajaxStart(function () {
+                $loading.show();
+            })
+            .ajaxStop(function () {
+                //setTimeout(() => {$loading.hide();}, 2000); 
+                $loading.css("display", "none");
+
+            });
+    })
+</script>
+    <div id="modal-container"></div>
+
+    <script src="/js/site.js?v=6mDKDZ3256CPgUG21XIMAl5-7IzLuRiXY5Hyrr1o2FY">
+    </script>
+    <script src="/js/datepicker.min.js?v=sDkngPRtG13GUwXC2lqAstMfdfYH4snQju5831kYx6g">
+    </script>
+    
+    <script src="/js/datepicker.min.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+
+            function updateAdditionalFields(id1, id2) {
+                $(id1).bind('keypress keyup blur', function () {
+                    var index;
+                    for (index = 0; index < id2.length; ++index) {
+                        $(id2[index]).val($(this).val());
+                    }
+
+
+                });
+            }
+
+            function updateProbationEndDate(id1, id2) {
+                $(id1).bind('keypress keyup blur',
+                    function () {
+                        var id1Value = $(this).val();
+                        var id1Date = new Date(id1Value);
+                        id1Date.setMonth(id1Date.getMonth() + 6);
+                        id1Date = id1Date.toISOString().slice(0, 10);
+                        $(id2).val(id1Date);
+
+                    });
+            }
+
+            $('#Person_Name').change(updateAdditionalFields($('#Person_Name'), $('#MyOperator_OperatorName')));
+            $('#Person_StartDate').change(updateAdditionalFields($('#Person_StartDate'), ['#Person_WellnessStartDate', '#Person_HolidayYearStartDate']));
+            $('#Person_StartDate').change(updateProbationEndDate($('#Person_StartDate'), $('#Person_ProbationEndDate')));
+
+            $('.detailsBtn').prop('disabled', true);
+            $('input').change(function() {
+                $('.detailsBtn').prop('disabled', this.value.change ? true : false);
+            });
+            $('textarea').change(function() {
+                $('.detailsBtn').prop('disabled', this.value.change ? true : false);
+            });
+            $('select').change(function() {
+                $('.detailsBtn').prop('disabled', this.value === "" ? true : false);
+            });
+            $('.checkbox').change(function() {
+                $('.detailsBtn').prop('disabled', this.value === "" ? true : false);
+            });
+
+            var currentEmp = true;
+
+            if (currentEmp === true) {
+                $('#currentEmployeeCheck').prop('checked', true);
+            }
+
+            var personExcluded = false;
+
+            if (personExcluded === true) {
+                $('#excludeCheckBox').prop('checked', true);
+            }
+
+            var showInHours = false;
+            if (showInHours === true) {
+                $('#showInHoursCheck').prop('checked', true);
+            }
+            var contractSigned = true;
+            if (contractSigned === true) {
+                $('#contractSignedCheckBox').prop('checked', true);
+            }
+            var wtdOptOut = false;
+            if (wtdOptOut === true) {
+                $('#wtdCheckBox').prop('checked', true);
+            }
+        });
+
+    </script>
+
+    <footer>
+            <div id="holidaySummaryFooter" class="footer-dates">
+                
+
+
+    <div class="rota-hours-min">
+                <p>Holidays requested <span>1 Day(s)</span></p>
+                <p>Holidays remaining <span>2.2 Day(s)</span></p>    
+                <p>Holiday allowance <span>3.2 Day(s)</span></p>
+    </div>
+
+
+            </div>
+    </footer>
+
+</body></html>

@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Wow Chat slot","Booking a WOW Chat Slot","ERROR","2021-07-07T13:21:47.1234196+01:00[Europe/London]","0.0","4.78"
+"Wow Chat slot","Editing a booked WOW Chat Slot","ERROR","2021-07-07T13:21:51.9559751+01:00[Europe/London]","0.0","12.44"
+"Wow Chat slot","Deleting a booked WOW Chat Slot","ERROR","2021-07-07T13:22:04.4288912+01:00[Europe/London]","0.0","3.67"

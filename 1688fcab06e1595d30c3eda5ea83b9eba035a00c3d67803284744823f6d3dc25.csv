@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Booking Time Off","Cancelling a booked Holiday","ERROR","2021-07-07T13:22:17.3261366+01:00[Europe/London]","0.0","7.19"
+"Booking Time Off","Cancelling booked Time In Lieu","ERROR","2021-07-07T13:22:30.0886884+01:00[Europe/London]","0.0","7.36"
+"Booking Time Off","Cancelling booked Appointment","ERROR","2021-07-07T13:22:43.8356458+01:00[Europe/London]","0.0","7.23"

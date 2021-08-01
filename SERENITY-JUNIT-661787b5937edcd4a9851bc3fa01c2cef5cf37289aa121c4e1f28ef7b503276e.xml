@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Update Employee's Details" skipped="0" tests="1" time="2.86" timestamp="2021-07-07 01:22:08"><testcase name="Update Employee's Details"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+pages.MyDetailsPage.ChangeTitle(MyDetailsPage.java:41)&#13;
+starter.stepdefinitions.myDetailsSteps.editEmployeeSDetails(myDetailsSteps.java:28)&#13;
+✽.edit employee's details(src/test/resources/features/UpdateEmployeeDetails.feature:9)&#13;
+</system-err></testcase></testsuite>

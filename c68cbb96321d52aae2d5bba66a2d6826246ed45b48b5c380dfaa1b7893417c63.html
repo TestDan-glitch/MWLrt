@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Features</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            var scenarioTable = $('.scenario-result-table').DataTable({
+
+                "order": [],
+                "language": {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                }
+            });
+
+            $('.example-table table').DataTable({
+                searching: false,
+                ordering: false,
+                paging: false,
+                info: false
+            });
+
+            $('.example-table-in-scenario table').DataTable({
+                searching: false,
+                ordering: false,
+                paging: false,
+                info: false
+            });
+
+            $('#evidence-table').DataTable(
+                    {
+                        searching: false,
+                        ordering: false,
+                        paging: false,
+                        info: false
+                    }
+            );
+
+
+            $(".scenario-docs .card-body table").wrap("<div class='table-responsive'></div>");
+
+            $("#requirements-tabs").tabs();
+            $("#test-tabs").tabs();
+
+            var requirementsTree = [{"text":"Booking Time Off","type":"feature","href":"c68cbb96321d52aae2d5bba66a2d6826246ed45b48b5c380dfaa1b7893417c63.html","nodes":[],"selectable":false,"tags":["","\u003cspan class\u003d\u0027feature-count\u0027\u003e9 scenarios\u003c/span\u003e"]}];
+
+            $('#tree').treeview({
+                data: requirementsTree,
+                enableLinks: true,
+                showTags: true,
+                expandIcon: "glyphicon glyphicon-folder-close",
+                collapseIcon: "glyphicon glyphicon-folder-open",
+                emptyIcon: "glyphicon glyphicon-book"
+            });
+
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".scenario-docs p").html(function () {
+                var text = $(this).text().trim().split(" ");
+                var first = text.shift();
+                return (text.length > 0 ? "<strong>" + first + "</strong> " : first) + text.join(" ");
+            });
+        });
+    </script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Serenity and Cucumber Quick Start</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+            <a href='index.html'>Home</a> > <a href="capabilities.html">Requirements</a>
+
+
+
+                > <span class="truncate-40">Booking Time Off</span>
+
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li >
+            <a href="index.html"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="dafb266f68444cb7f2451c923d70c1428ac45470c361842b818e6daa9bcd4fa8.html"><i class="fa fa-comments-o"></i> Themes</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li class="active">
+            <a href="#"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 07-07-2021 13:22</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+    <div id="beforetable"></div>
+    <div id="results-dashboard">
+        <div class="table">
+                <div class=row">
+                    <div class="col-sm-12">
+                        <div>
+                            <div clas="table">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                    <span>
+                                            <h2><i class="fa fa-book"></i> Feature:  Booking Time Off</h2>
+                                        </span>
+                                </div>
+                                    <div class="col-sm-4">
+                                        <span class="feature-tags">
+                                                <p class="tag">
+                                                    <span class="badge tag-badge" style="background:default;">
+                                                        <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
+                                                                                          style="background:default;"
+                                                                                          href="0dc7ae28ef2518d4890d76d4e5bda36729aa8a5083714f65ab9ffea576bbf767.html">Timeoff
+                                                        (tag)</a>
+                                                    </span>
+                                                </p>
+                                                <p class="tag">
+                                                    <span class="badge tag-badge" style="background:default;">
+                                                        <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
+                                                                                          style="background:default;"
+                                                                                          href="110f3228fcd13553bc6a5670ae7cf7873111955c145c30aed9b4672411650416.html">Appointment
+                                                        (tag)</a>
+                                                    </span>
+                                                </p>
+                                                <p class="tag">
+                                                    <span class="badge tag-badge" style="background:default;">
+                                                        <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
+                                                                                          style="background:default;"
+                                                                                          href="f28180850c1e6ff439baf6d5e2dccc9640df39796f4fa9680310943dd3e1f701.html">Cancellingappointment
+                                                        (tag)</a>
+                                                    </span>
+                                                </p>
+                                        </span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="requirementNarrativeTitle">
+                                As an Employee of Moneypenny<br />
+I want to book time
+                            </div>
+
+                        </div>
+                    </div>
+
+
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <!-- Requirements result tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a data-toggle="tab" href="#specs"><i class="fas fa-comments"></i> Specifications</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#results"><i class="fas fa-tachometer-alt"></i> Test Results</a>
+                        </li>
+                    </ul>
+
+                    <!-- Specifications and Results tabs -->
+                    <div class="card border">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div id="specs" class="tab-pane fade in active">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+
+
+                                            <h3>Scenarios</h3>
+
+                                            <div id="toc">
+                                                <table class="table" id="toc-table">
+                                                        <tr>
+                                                            <td style="width:99%;" class="toc-title"><a href="#cad01c606fa4d7ef61498877e85ec4c2b5944561b875a48cc7f6dc86d280ae9b">Booking a Holiday</a>
+
+
+                                                            </td>
+                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                               
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:99%;" class="toc-title"><a href="#5ad05f4205cc4f5a420905e99fcb80cd9e0362e52be401a87eccab0edfe0ce46">Checking for a Holiday booking conflict</a>
+
+
+                                                            </td>
+                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                               
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:99%;" class="toc-title"><a href="#4275a117555ad9a67b83adbb457f182ee48fd03c27480b1e8d8606bea2fb38fa">Cancelling a booked Holiday</a>
+
+
+                                                            </td>
+                                                            <td style="width:1%;"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i>
+                                                               
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:99%;" class="toc-title"><a href="#7ad45ae43068cc6f1d51314f8e961ee1c33c623a72420408c79a09a8f1177373">Booking Time in Lieu</a>
+
+
+                                                            </td>
+                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                               
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:99%;" class="toc-title"><a href="#cb3abd01664c00fa79fd0aa7e3286aa3de1d938c8e936b6ed41574c03fd02d9a">Checking for Time in Lieu booking conflict</a>
+
+
+                                                            </td>
+                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                               
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:99%;" class="toc-title"><a href="#49990352528c716ff2f661f73665085e3363eacd42cb1454c742b95ce7fa7d65">Cancelling booked Time In Lieu</a>
+
+
+                                                            </td>
+                                                            <td style="width:1%;"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i>
+                                                               
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:99%;" class="toc-title"><a href="#f9631ccd60702ac1526eb1d391e6735a9cc61321da8e6376bac258e75d866c09">Booking an Appointment</a>
+
+
+                                                            </td>
+                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                               
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:99%;" class="toc-title"><a href="#3336971079c8af306ac640b8eba0015b30a4ea575ec75a78b209d6ac96494c73">Checking for a Appointment booking conflict</a>
+
+
+                                                            </td>
+                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                               
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:99%;" class="toc-title"><a href="#d69f0a35183423591b7c1dec08c60ee03714f94a8dc6240460476973bccf7d4e">Cancelling booked Appointment</a>
+
+
+                                                            </td>
+                                                            <td style="width:1%;"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i>
+                                                               
+                                                            </td>
+                                                        </tr>
+                                                </table>
+
+                                            </div>
+
+                                            <h3>Scenario details</h3>
+
+
+                                                <div class="scenario-docs card" id="cad01c606fa4d7ef61498877e85ec4c2b5944561b875a48cc7f6dc86d280ae9b">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                        <div>
+                                                            <span class="scenario-heading">
+                                                                Booking a Holiday
+                                                            </span>
+                                                            <span class="scenario-result-icon">
+                                                                
+
+                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="scenario-report-badges">
+                                                                <span class="scenario-report-badge" style="float:right;"><a href='da7b91782658101ae348694c389f9f25b7a748e844fe467c5e35eb0bc332c2e9.html' class='badge more-details'>Test Results</a></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scenario-docs card-body">
+                                                            <p>Given an employee logs into My Working Life</p>
+                                                            <p>When the employee goes to the holiday request screen</p>
+                                                            <p>And selects a day to book off</p>
+                                                            <p>Then books the Time Off</p>
+                                                        <div class="examples">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="scenario-docs card" id="5ad05f4205cc4f5a420905e99fcb80cd9e0362e52be401a87eccab0edfe0ce46">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                        <div>
+                                                            <span class="scenario-heading">
+                                                                Checking for a Holiday booking conflict
+                                                            </span>
+                                                            <span class="scenario-result-icon">
+                                                                
+
+                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="scenario-report-badges">
+                                                                <span class="scenario-report-badge" style="float:right;"><a href='6d5e8de5c0041e91a6c070f1173f546ce5f88ee5e90fd36d6eed3cf628b3b6d2.html' class='badge more-details'>Test Results</a></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scenario-docs card-body">
+                                                            <p>Given an employee logs into My Working Life</p>
+                                                            <p>When the employee goes to the holiday request screen</p>
+                                                            <p>And selects a day to book off</p>
+                                                            <p>Then the employee fails to book the same day again</p>
+                                                            <p>And log out of MWL</p>
+                                                        <div class="examples">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="scenario-docs card" id="4275a117555ad9a67b83adbb457f182ee48fd03c27480b1e8d8606bea2fb38fa">
+                                                    <div class="scenario-docs card-header error" style="min-height:1.5em;">
+                                                        <div>
+                                                            <span class="scenario-heading">
+                                                                Cancelling a booked Holiday
+                                                            </span>
+                                                            <span class="scenario-result-icon">
+                                                                
+
+                                                                    <i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="scenario-report-badges">
+                                                                <span class="scenario-report-badge" style="float:right;"><a href='409c102be5a43c54e9efffe7ebe276c7b8a5f2f78f2ac979d2dbcdf9f84be242.html' class='badge more-details'>Test Results</a></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scenario-docs card-body">
+                                                            <p>Given an employee logs into My Working Life</p>
+                                                            <p>When the employee goes to the holiday request screen</p>
+                                                            <p>Then cancels a booked holiday</p>
+                                                            <p>And log out of MWL</p>
+                                                        <div class="examples">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="scenario-docs card" id="7ad45ae43068cc6f1d51314f8e961ee1c33c623a72420408c79a09a8f1177373">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                        <div>
+                                                            <span class="scenario-heading">
+                                                                Booking Time in Lieu
+                                                            </span>
+                                                            <span class="scenario-result-icon">
+                                                                
+
+                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="scenario-report-badges">
+                                                                <span class="scenario-report-badge" style="float:right;"><a href='19bf85fea2b71853d2c6708e770f0d7265941b7751ddd1ddf326d747587f7da3.html' class='badge more-details'>Test Results</a></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scenario-docs card-body">
+                                                            <p>Given an employee logs into My Working Life</p>
+                                                            <p>When the employee goes to the Lieu request screen</p>
+                                                            <p>Then books the Time Off</p>
+                                                            <p>And log out of MWL</p>
+                                                        <div class="examples">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="scenario-docs card" id="cb3abd01664c00fa79fd0aa7e3286aa3de1d938c8e936b6ed41574c03fd02d9a">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                        <div>
+                                                            <span class="scenario-heading">
+                                                                Checking for Time in Lieu booking conflict
+                                                            </span>
+                                                            <span class="scenario-result-icon">
+                                                                
+
+                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="scenario-report-badges">
+                                                                <span class="scenario-report-badge" style="float:right;"><a href='7c37749bf298f28efbe5ebc9a78678eab66d62140af5478008daa7d0b86c4217.html' class='badge more-details'>Test Results</a></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scenario-docs card-body">
+                                                            <p>Given an employee logs into My Working Life</p>
+                                                            <p>When the employee goes to the Lieu request screen</p>
+                                                            <p>Then the employee fails to book the same day again</p>
+                                                            <p>And log out of MWL</p>
+                                                        <div class="examples">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="scenario-docs card" id="49990352528c716ff2f661f73665085e3363eacd42cb1454c742b95ce7fa7d65">
+                                                    <div class="scenario-docs card-header error" style="min-height:1.5em;">
+                                                        <div>
+                                                            <span class="scenario-heading">
+                                                                Cancelling booked Time In Lieu
+                                                            </span>
+                                                            <span class="scenario-result-icon">
+                                                                
+
+                                                                    <i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="scenario-report-badges">
+                                                                <span class="scenario-report-badge" style="float:right;"><a href='df65f0f17c0d11bbac25523878fa701d045cd852299e0465476e7d2e2c54935d.html' class='badge more-details'>Test Results</a></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scenario-docs card-body">
+                                                            <p>Given an employee logs into My Working Life</p>
+                                                            <p>When the employee goes to the Lieu request screen</p>
+                                                            <p>Then cancels a booked holiday</p>
+                                                            <p>And log out of MWL</p>
+                                                        <div class="examples">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="scenario-docs card" id="f9631ccd60702ac1526eb1d391e6735a9cc61321da8e6376bac258e75d866c09">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                        <div>
+                                                            <span class="scenario-heading">
+                                                                Booking an Appointment
+                                                            </span>
+                                                            <span class="scenario-result-icon">
+                                                                
+
+                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="scenario-report-badges">
+                                                                <span class="scenario-report-badge" style="float:right;"><a href='24da24238c5f793f9eff0e3834cd67f1ae6b4c3d80f74ca8f07ead051dc7d9e3.html' class='badge more-details'>Test Results</a></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scenario-docs card-body">
+                                                            <p>Given an employee logs into My Working Life</p>
+                                                            <p>When the employee goes to the Appointment request screen</p>
+                                                            <p>And enters Reason for the Appointment</p>
+                                                            <p>And enters Notes about the Appointment</p>
+                                                            <p>Then books the Time Off</p>
+                                                            <p>And log out of MWL</p>
+                                                        <div class="examples">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="scenario-docs card" id="3336971079c8af306ac640b8eba0015b30a4ea575ec75a78b209d6ac96494c73">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                        <div>
+                                                            <span class="scenario-heading">
+                                                                Checking for a Appointment booking conflict
+                                                            </span>
+                                                            <span class="scenario-result-icon">
+                                                                
+
+                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="scenario-report-badges">
+                                                                <span class="scenario-report-badge" style="float:right;"><a href='3ebe2c8e68c8e5d73c7daf739e5002f96c9fdbd9eb720946e1c97375c4142916.html' class='badge more-details'>Test Results</a></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scenario-docs card-body">
+                                                            <p>Given an employee logs into My Working Life</p>
+                                                            <p>When the employee goes to the Appointment request screen</p>
+                                                            <p>And enters Reason for the Appointment</p>
+                                                            <p>And enters Notes about the Appointment</p>
+                                                            <p>Then the employee fails to book the same day again</p>
+                                                            <p>And log out of MWL</p>
+                                                        <div class="examples">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="scenario-docs card" id="d69f0a35183423591b7c1dec08c60ee03714f94a8dc6240460476973bccf7d4e">
+                                                    <div class="scenario-docs card-header error" style="min-height:1.5em;">
+                                                        <div>
+                                                            <span class="scenario-heading">
+                                                                Cancelling booked Appointment
+                                                            </span>
+                                                            <span class="scenario-result-icon">
+                                                                
+
+                                                                    <i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="scenario-report-badges">
+                                                                <span class="scenario-report-badge" style="float:right;"><a href='fdcb690056c90c053c67203d1da88440b4efdfc2bb3578f9e372ab085215014c.html' class='badge more-details'>Test Results</a></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scenario-docs card-body">
+                                                            <p>Given an employee logs into My Working Life</p>
+                                                            <p>When the employee goes to the Appointment request screen</p>
+                                                            <p>Then cancels the booked Appointment</p>
+                                                            <p>And log out of MWL</p>
+                                                        <div class="examples">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="results" class="tab-pane fade">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+
+                                            <div style="width:300px;" class="chart-container automated-and-manual-results">
+                                                <div class="ct-chart ct-square"></div>
+                                            </div>
+                                            <script>
+
+                                                var labels = ['67%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '33%', ' ', ' ', ' '];
+                                                // Our series array that contains series objects or in this case series data arrays
+
+                                                var series = [{meta: 'Passing tests (automated)', value: 6}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 3}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+
+                                                // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
+                                                // as you saw in the previous example
+                                                var options = {
+                                                    width: 350,
+                                                    height: 300
+                                                };
+
+                                                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                                                    new Chartist.Pie('.ct-chart', {
+                                                        series: series,
+                                                        labels: labels,
+                                                    }, {
+                                                        donut: true,
+                                                        donutWidth: 60,
+                                                        donutSolid: true,
+                                                        startAngle: 270,
+                                                        showLabel: true
+                                                    }, options);
+                                                });
+
+                                            </script>
+                                        </div>
+                                        <div class="col-sm-8">
+
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">Scenario Results (including rows of test data)</th>
+                                                <th scope="col" colspan="2" class="automated-stats">
+                                                    Automated
+                                                </th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                                    <td class="aggregate-result-count">
+                                                                        <a href="7f637b713a01cad44cced6fa04d0eae6fb9cbedfb34db55cbfc6476dcb732098.html"><i
+                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                    </td>
+                                                <td class="automated-stats">6</td>
+                                                <td class="automated-stats">67%</td>
+                                            </tr>
+                                            <tr>
+                                                                    <td class="aggregate-result-count"><i
+                                                                            class='fa fa-stop-circle-o pending-icon'></i>&nbsp;Pending
+                                                                    </td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
+                                            </tr>
+                                            <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                        class='fa fa-ban ignored-icon'></i>&nbsp;Ignored
+                                                                </td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
+                                            </tr>
+                                            <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                        class='fa fa-fast-forward skip-icon'></i>&nbsp;Skipped
+                                                                </td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
+                                            </tr>
+                                            <tr>
+                                                                    <td colspan="3"><a href="20ef0f38af47119dc9d020233d5d2bc10e39c876ac24f72c5c9175a81d227c0c.html"><i
+                                                                            class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                    </td>
+                                            </tr>
+
+                                            <tr>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
+                                                                </td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
+                                            <tr>
+                                                                    <td class="aggregate-result-count indented-error-category">
+                                                                        <a href="696c40aa5f5b5443d4f0cea22322a759bd4e6c16971e32ccb125b9a9b2a4dff0.html"><i
+                                                                                class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken</a>
+                                                                    </td>
+                                                <td class="automated-stats">3</td>
+                                                <td class="automated-stats">33%</td>
+                                            <tr>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-chain-broken compromised-icon'></i>&nbsp;Compromised
+                                                                </td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
+                                            </tr>
+                                            <tr class="summary-stats">
+                                                <td class="aggregate-result-count">Total</td>
+                                                <td class="automated-stats">9</td>
+                                                <td class="automated-stats"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <table class="table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Execution Time</th>
+                                                        <th>Clock Time</th>
+                                                        <th>Fastest Test</th>
+                                                        <th>Slowest Test</th>
+                                                        <th>Average Execution Time</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>39s</td>
+                                                        <td>32s</td>
+                                                        <td>2s</td>
+                                                        <td>7s</td>
+                                                        <td>4s</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h3><i class="fas fa-cogs"></i> Automated Tests</h3>
+
+                                            <table class="scenario-result-table table" id="scenario-results">
+                                                <thead>
+                                                <tr>
+                                                    <th class="test-name-column">Scenario</th>
+                                                    <th>Steps</th>
+                                                    <th>Start Time</th>
+                                                    <th>Duration</th>
+                                                    <th>Result</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="da7b91782658101ae348694c389f9f25b7a748e844fe467c5e35eb0bc332c2e9.html">Booking a Holiday</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>13:22:11</td>
+                                                    <td>00:03</td>
+                                                    <td>
+                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                                style="display:none">SUCCESS</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="6d5e8de5c0041e91a6c070f1173f546ce5f88ee5e90fd36d6eed3cf628b3b6d2.html">Checking for a Holiday booking conflict</a>
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>13:22:14</td>
+                                                    <td>00:02</td>
+                                                    <td>
+                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                                style="display:none">SUCCESS</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="scenario-result ERROR">
+                                                    <td>
+                                                            <a href="409c102be5a43c54e9efffe7ebe276c7b8a5f2f78f2ac979d2dbcdf9f84be242.html">Cancelling a booked Holiday</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>13:22:17</td>
+                                                    <td>00:07</td>
+                                                    <td>
+                                                            <i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i> <span
+                                                                style="display:none">ERROR</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="19bf85fea2b71853d2c6708e770f0d7265941b7751ddd1ddf326d747587f7da3.html">Booking Time in Lieu</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>13:22:24</td>
+                                                    <td>00:02</td>
+                                                    <td>
+                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                                style="display:none">SUCCESS</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="7c37749bf298f28efbe5ebc9a78678eab66d62140af5478008daa7d0b86c4217.html">Checking for Time in Lieu booking conflict</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>13:22:27</td>
+                                                    <td>00:02</td>
+                                                    <td>
+                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                                style="display:none">SUCCESS</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="scenario-result ERROR">
+                                                    <td>
+                                                            <a href="df65f0f17c0d11bbac25523878fa701d045cd852299e0465476e7d2e2c54935d.html">Cancelling booked Time In Lieu</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>13:22:30</td>
+                                                    <td>00:07</td>
+                                                    <td>
+                                                            <i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i> <span
+                                                                style="display:none">ERROR</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="24da24238c5f793f9eff0e3834cd67f1ae6b4c3d80f74ca8f07ead051dc7d9e3.html">Booking an Appointment</a>
+                                                    </td>
+                                                    <td>6</td>
+                                                    <td>13:22:37</td>
+                                                    <td>00:03</td>
+                                                    <td>
+                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                                style="display:none">SUCCESS</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="3ebe2c8e68c8e5d73c7daf739e5002f96c9fdbd9eb720946e1c97375c4142916.html">Checking for a Appointment booking conflict</a>
+                                                    </td>
+                                                    <td>6</td>
+                                                    <td>13:22:40</td>
+                                                    <td>00:03</td>
+                                                    <td>
+                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                                style="display:none">SUCCESS</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="scenario-result ERROR">
+                                                    <td>
+                                                            <a href="fdcb690056c90c053c67203d1da88440b4efdfc2bb3578f9e372ab085215014c.html">Cancelling booked Appointment</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>13:22:43</td>
+                                                    <td>00:07</td>
+                                                    <td>
+                                                            <i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i> <span
+                                                                style="display:none">ERROR</span>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h3><i class="fas fa-edit"></i> Manual Tests</h3>
+
+                                                No manual tests were recorded
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span class="version">Serenity BDD version 2.0.30</span>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>

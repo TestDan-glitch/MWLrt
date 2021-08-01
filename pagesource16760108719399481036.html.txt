@@ -1,0 +1,574 @@
+<html class=" boxsizing"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge; IE=8; IE=9; IE=10; IE=11; Chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Time Off - My Working Life</title>
+
+    <link rel="stylesheet" href="/lib/air-datepicker/dist/css/datepicker.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/Styles/structure/jquery-ui.css">
+
+    <script src="/lib/jquery/jquery.min.js">
+    </script>
+    <script src="/lib/jquery-ui-dist/jquery-ui.min.js">
+    </script>
+    <script src="/js/modernizr-custom.js">
+    </script>
+    <script src="/js/jquery.unobtrusive-ajax.min.js">
+    </script>
+    <script src="/lib/jquery-validation/jquery.validate.min.js">
+    </script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+    </script>
+    <script src="/lib/moment/moment.min.js">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js">
+    </script>
+    <script type="text/javascript">var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){function n(e){t[e]=function(){var n=arguments;t.queue.push(function(){t[e].apply(t,n)})}}var t={config:e};t.initialize=!0;var i=document,a=window;setTimeout(function(){var n=i.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js",i.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{t.cookie=i.cookie}catch(e){}t.queue=[],t.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var s="Track"+r[0];if(n("start"+s),n("stop"+s),n("addTelemetryInitializer"),n("setAuthenticatedUserContext"),n("clearAuthenticatedUserContext"),n("flush"),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var o=a[r];a[r]=function(e,n,i,a,s){var c=o&&o(e,n,i,a,s);return!0!==c&&t["_"+r]({message:e,url:n,lineNumber:i,columnNumber:a,error:s}),c},e.autoExceptionInstrumented=!0}return t}(
+{
+  instrumentationKey: '5a052d3a-1326-44ac-bb25-1cdfef738512'
+});
+
+window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
+
+</script>
+<script src="https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js"></script></head>
+<body>
+
+    <div id="jsoverlay" style="display: none">
+        <div class="progressSpinner" style="display: none;"></div>
+    </div>
+
+    <div class="navbar-fixed">
+        <nav class="clearfix">
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="nav-inner">
+    <li class="logo-nav">
+        <a class="brand-logo" href="/">
+            <!--?xml version="1.0" encoding="utf-8" ?-->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 197.3 36.7" width="120" height="50" xml:space="preserve">
+            <g>
+            <path style="fill: #FFFFFF;" d="M77.6,12.7v-0.9h-3.5V28h3.5l0-10.7c0-1.2,1.7-2.3,3.5-2.3c1.6,0,3.2,1,3.2,2.3V28h3.5V17.3c0-1.3-0.6-2.7-1.6-3.7C84.4,11.1,79.5,11.3,77.6,12.7z"></path>
+
+            <path style="fill: #FFFFFF;" d="M64.4,11.5c-4.7,0-8.6,3.8-8.6,8.6c0,4.7,3.8,8.6,8.6,8.6c4.7,0,8.6-3.9,8.6-8.6C72.9,15.4,69.1,11.5,64.4,11.5z M64.4,25.4c-2.9,0-5.3-2.4-5.3-5.3c0-2.9,2.4-5.3,5.3-5.3c2.9,0,5.2,2.4,5.2,5.3C69.6,23,67.3,25.4,64.4,25.4z"></path>
+
+            <path style="fill: #FFFFFF;" d="M48.4,11.7c-0.7,0-3.1-0.5-5.5,1.9c-1.8-2.5-6.5-2.5-9.2-1.1c-2.7,1.5-2.9,4.2-2.9,4.2l0,11.2l3.6,0.1l0-10.7c0-1.2,1.7-2.3,3.5-2.3c1.6,0,3.1,1,3.1,2.3V28h3.5V17.3c0-1.3,1.8-2.4,3.6-2.4c1.6,0,3.1,1,3.1,2.4V28h3.5l0.1-10.7C54.5,14.2,51.8,11.8,48.4,11.7z"></path>
+
+            <path style="fill: #FFFFFF;" d="M193.6,11.9l-4,11.7l-4.4-11.7h-3.5h-0.3l0.3,0.7l6.2,16l-0.5,1.6c-0.6,1.8-3,3.2-4.7,3.1l0.1,3.3c4.9-0.3,7.4-3.6,8.4-6.6l6.1-18.2H193.6z"></path>
+
+            <path style="fill: #FFFFFF;" d="M144.5,11.6h-0.2c-4.5,0-8.1,3.7-8.1,8.5c0,4.7,3.6,8.6,8.1,8.6h0.2c2.5,0,5.5-0.5,6.9-2.4l-2.5-2.2c-0.9,1.2-2.9,1.3-4.5,1.3h-0.2c-2.3,0-3.8-1.7-4.2-3.9h4.4h4.5h3.2c0.1-0.5,0.1-0.9,0.1-1.4C152.3,15.5,148.8,11.8,144.5,11.6z M144.5,18.2h-4.3c0.6-2,2-3.5,4.1-3.5h0.2c2,0.1,3.7,1.6,4.4,3.5H144.5z"></path>
+
+            <path style="fill: #FFFFFF;" d="M104.3,16.7c-1.2-2.9-3.9-5-7.1-5.1h-0.3c-4.4,0-8.1,3.7-8.1,8.5c0,4.7,3.6,8.6,8.1,8.6h0.3c2.5,0,5.5-0.5,6.9-2.4l-2.5-2.2c-0.8,1.2-2.9,1.3-4.4,1.3h-0.3c-2.3,0-3.7-1.7-4.2-3.9h4.5h4.5h2.6h0.6c0.1-0.5,0.1-0.9,0.1-1.4C104.9,18.9,104.7,17.8,104.3,16.7z M97.1,18.2h-4.3c0.5-2,2-3.5,4-3.5h0.3c2,0.1,3.7,1.6,4.3,3.5H97.1z"></path>
+
+            <path style="fill: #FFFFFF;" d="M180.3,13.6c-1.8-2.5-6.8-2.3-8.7-0.9v-0.9h-3.5V28h3.6V17.3c0-1.2,1.7-2.3,3.4-2.3c1.6,0,3.2,1,3.2,2.3V28h3.3h0.2V17.3c0-0.5-0.1-1-0.2-1.5C181.4,15,180.9,14.2,180.3,13.6z"></path>
+
+            <path style="fill: #FFFFFF;" d="M157,12.7v-0.9h-3.5V28h3.5l0.1-10.7c0-1.2,1.7-2.3,3.4-2.3c1.6,0,3.2,1,3.2,2.3V28h3.5V17.3c0-1.3-0.6-2.7-1.6-3.7C163.8,11.1,158.8,11.3,157,12.7z"></path>
+
+            <path style="fill: #FFFFFF;" d="M127.9,11.7c-0.5-0.1-1.1-0.1-1.6-0.1c-0.8,0-1.5,0.1-2.2,0.2h-3.5l0,24.8h3.5l0-8.1c0.7,0.2,1.5,0.3,2.2,0.3c0.6,0,1.1-0.1,1.6-0.2c4.3-0.7,7.5-4.3,7.5-8.4C135.4,16,132.2,12.4,127.9,11.7z M127.9,25.1c-0.5,0.1-1.1,0.2-1.6,0.2c-0.8,0-1.6-0.2-2.2-0.5v-9.7c0.7-0.3,1.4-0.5,2.2-0.5c0.6,0,1.1,0.1,1.6,0.2c2.3,0.7,3.9,2.7,3.9,5.1C131.8,22.4,130.2,24.4,127.9,25.1z"></path>
+
+            <path style="fill: #FFFFFF;" d="M111.8,23.6l-4.4-11.7h-3.1h-0.7l0.7,1.7l5.9,14.9l-0.6,1.6c-0.6,1.8-3,3.2-4.7,3.1l0.1,3.3c4.9-0.3,7.4-3.6,8.4-6.6l6.1-18.2h-3.8L111.8,23.6z"></path>
+
+            <path style="fill: #FFFFFF;" d="M31.2,10C31.2,10,31.2,10,31.2,10c0.4-0.1,0.9-0.2,1.3-0.2c0.3,0,0.5-0.1,0.8-0.1c0,0,0,0,0,0c0,0,0,0,0,0c-0.6-0.5-0.8-0.7-1.4-1.4c0.1-0.9-0.3-2.4-0.7-3.5c-1.4-4-6.4-4.8-9.6-2.7c-1.8,1.2-2.7,3.5-2.4,5.3C13.1,7.6,6.9,5.6,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0.3,0.1,0.7,0.2,1.2C-0.4,6.4,0.4,10,1.8,12.5c0,0-0.1-0.1-0.1-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0.1,0.1,0.1c0.1,0.2,0.2,0.3,0.3,0.5c0,0.1,0.1,0.1,0.1,0.2c0.1,0.2,0.2,0.3,0.3,0.5c0.1,0.1,0.1,0.1,0.2,0.2c0.1,0.2,0.2,0.3,0.4,0.4c0.1,0.1,0.1,0.1,0.2,0.2c0.1,0.1,0.3,0.3,0.4,0.4c0.1,0.1,0.1,0.1,0.2,0.2c0,0,0,0,0,0c0.8,3.3,3,4.3,5.2,5.6c0,0-0.1,0-0.1,0c0.1,0.1,0.2,0.1,0.3,0.2c-0.4,0.1-0.8,0.2-1.2,0.3c3.7,3,7.7,3.4,11,3.8c-2.2,2.9-5.1,4.9-7.1,5.8c0.7,0.2,1.2,0.3,1.7,0.4c-0.4,0.2-0.8,0.4-1.2,0.5c1.3,1.3,2.6,1.9,3.8,2.2c-0.2,0.1-0.4,0.2-0.6,0.3c1.2,0.6,2.1,1.1,3.7,0.9c-0.2,0.1-0.4,0.2-0.7,0.4c1.6,1.4,2.7,1.4,3.6,1c1.4,1.2,5.3-0.3,5.5-2.1v-1.8v-1v-7.6v-0.7c0,0,0,0,0,0l0-8.2c0-0.1,0-0.1,0-0.2c0-0.1,0-0.1,0-0.2c0,0,0,0,0-0.1c0.1-0.3,0.2-0.8,0.5-1.4c0-0.1,0.1-0.1,0.1-0.2c0-0.1,0.1-0.1,0.1-0.2c0-0.1,0.1-0.2,0.1-0.2c0.5-0.8,1.4-1.7,2.7-2.4C31,10.1,31.1,10,31.2,10z M29,7.7c-0.4,0-0.7-0.3-0.7-0.7c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C29.8,7.4,29.4,7.7,29,7.7z"></path>
+
+                </g>
+                </svg>
+        </a>
+    </li>
+    <li class="working-life-nav">
+
+            <span class="mwl-title">
+                My Working
+                Life
+            </span>
+    </li>
+    <li style="margin-bottom: 40px;">
+        
+    </li>
+    <li class="user-details-nav" style="margin-top: 10px;">
+            <div>
+                <a class="nav-user-wrapper" title="Manage" href="/Manage">
+                    <div class="circular-portrait">
+                        <img src="https://images.moneypenny.co.uk/Display/Context?context=sta-154&amp;size=80">
+                    </div>
+                    <span class="hr-user-name">Naomi Lloyd</span>
+                </a>
+
+
+                <form method="post" id="logoutForm" action="/Account/Logout">
+                    <button type="submit" class="btn btn-logout">
+                        Log out
+                    </button>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8C86VRlamY9LuDBhq5TV3fdxkHV0aRNh4Fh6rFsc-sU9-y-QzuLA_uNw8SklGDW856z3yWt-ZSGdHdlkJeIC6npmsEWHzQPG1fKHqQeUtniw3duuHBIF1RZPLOfqhzstfhzyBOmnpaujICxxnpxucvHJ4EnlCwAfYNmccWLVaYoWrUS3arTH1T7kapcN7Uoy0Q"></form>
+            </div>
+    </li>
+</ul>
+
+<script>
+    $(function () {
+        $('.toggle').change(function () {
+            const self = $(this);
+            const url = self.data('url');
+            const id = self.attr('id');
+            $.ajax({
+                url: url,
+                data: { id: id },
+                type: 'POST',
+                success: function (e) {
+                    window.location.reload();
+                }
+            });
+        });
+    });
+
+    function success(data) {
+        window.location.reload();
+    }
+
+
+</script>
+            </div>
+        </nav>
+    </div>
+
+    
+<h1 class="page-header">My Time Off <img src="/images/hol-icon.svg" alt=""></h1>
+
+<div class="container" id="myTimeOff">
+
+    <div class="breadcrumbs-wrapper">
+        <a href="/">&lt; Back</a>
+    </div>
+
+    <div id="holidaySummary" class="summary-dates">
+        
+
+<div class="rota-hours rota-summary">
+
+    <h3>Holiday Entitlement</h3>
+
+    <div class="clearfix"></div>
+
+        <div style="width: 100%; margin-bottom: 30px; white-space: nowrap">
+            <div class="date-arrow-wrapper pull-left" style="margin-bottom: 5px!important">
+                <ul>
+                    <li>
+                        <a class="prev-link" data-ajax="true" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-update="#holidaySummary" href="/MyRota/ExceptionSummary?date=20200707&amp;type=Holiday">&lt;</a>
+                    </li>
+                    <li>
+                        <div class="from-date">
+                            <p>29/05/2021 &gt; 28/05/2022</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="next-link" data-ajax="true" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-update="#holidaySummary" href="/MyRota/ExceptionSummary?date=20220707&amp;type=Holiday">&gt;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div style="width: 100%;margin-left: 2%; white-space: nowrap">
+                <p>Holiday booked <span>0 Days</span></p>
+                <p>Holiday requested <span>1 Day(s)</span></p>
+                <p>Holiday remaining <span> 2.2 Day(s)</span></p>
+                <p>Holiday allowance <span>3.2 Day(s)</span></p>
+        </div>
+
+
+    <div class="rota-graph-wrapper" style="white-space: nowrap">
+            <span class="rota-days-graph-requested" style="width: 31.2500%"></span>
+            <span class="rota-days-graph-left" style="width: 68.7500%; padding-left: 0;"></span>
+
+                <b>
+                    0 Days
+                </b>
+                <b>
+                    2.2 Day(s)
+                </b>
+                    <b style="margin-left: 40%;">
+                        1 Day(s)
+                    </b>
+
+    </div>
+</div>
+
+    </div>
+
+    <div id="lieuSummary" class="summary-dates" style="display: none;">
+        
+
+<div class="rota-hours rota-summary">
+
+    <h3>Lieu Entitlement</h3>
+
+    <div class="clearfix"></div>
+
+        <div class="date-arrow-wrapper pull-left">
+            <ul>
+                <li>
+                    <a class="prev-link" data-ajax="true" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-update="#holidaySummary" href="/MyRota/ExceptionSummary?date=20200707&amp;type=Lieu">&lt;</a>
+                </li>
+                <li>
+                    <div class="from-date">
+                        <p>29/05/2021 &gt; 28/05/2022</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="next-link" data-ajax="true" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-update="#holidaySummary" href="/MyRota/ExceptionSummary?date=20220707&amp;type=Lieu">&gt;</a>
+                </li>
+            </ul>
+        </div>
+            <p>Lieu booked <span>0 Days</span></p>
+            <p>Lieu remaining <span> 0 Days</span></p>
+            <p>Lieu allowance <span>0 Days</span></p>
+
+
+    <div class="rota-graph-wrapper" style="white-space: nowrap">
+            <span class="rota-days-graph-left" style="width: 100%; padding-left: 0;"></span>
+
+                <b>
+                    0 Days
+                </b>
+                <b>
+                    0 Days
+                </b>
+
+    </div>
+</div>
+
+    </div>
+    
+    <div id="appointmentSummary" class="summary-dates" style="display: none;">
+
+    </div>
+
+    <div id="holiday-summary-wrapper-main">
+        
+
+
+<div class="container" style="width: 100%">
+    <div class="rota-hours">
+        <h3>Dates Booked</h3>
+        <div class="clearfix"></div>
+        <div class="date-arrow-wrapper pull-left">
+            <ul>
+                <li>
+                    <a class="prev-link" data-ajax="true" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-update="#holiday-summary-wrapper-main" href="/MyTimeOff/ExceptionRequest?date=20200707&amp;type=Holiday">&lt;</a>
+                </li>
+                <li>
+                    <div class="from-date"><p>29/05/2021 &gt; 28/05/2022</p></div>
+                </li>
+                <li>
+                    <a class="next-link" data-ajax="true" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-update="#holiday-summary-wrapper-main" href="/MyTimeOff/ExceptionRequest?date=20220707&amp;type=Holiday">&gt;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="toggle-timeOff">
+
+            <p class="no-bottom-margin toggle-timeOff--active" id="Holiday" data-clear="#accordionContainer">
+Holiday            </p>
+            <p class="no-bottom-margin" id="Lieu" data-clear="#accordionContainer">
+Lieu            </p>
+            <p class="no-bottom-margin" id="Appointment" data-clear="#accordionContainer">
+Appointment            </p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <div id="exceptionsContainer">
+
+                    <div id="holidayBtnDiv" class="requests-wrapper">
+                        <a id="RequestDaysOff" class="no-float request-day-link btn-dark-outline" data-ajax="true" data-ajax-update="#accordionContainer" exceptrestricteddepartments="" href="/MyTimeOff/RequestDayOff?type=Holiday&amp;ShowInHours=False">Request Day(s) Off</a>
+                        <a id="TimeOffHistory" class="no-float request-day-link btn-dark-outline" href="/MyTimeOff/TimeOffHistory" style="display:none">View History</a>
+                    </div>
+                    <div id="lieuBtnDiv" class="requests-wrapper" style="display: none;">
+                        <a id="RequestLieuDaysOff" class="no-float request-day-link btn-dark-outline" data-ajax="true" data-ajax-update="#accordionContainer" exceptrestricteddepartments="" href="/MyTimeOff/RequestDayOff?type=Lieu&amp;ShowInHours=False">Request Day(s) Off</a>
+                    </div>
+                    <div id="appointmentBtnDiv" class="requests-wrapper" style="display: none;">
+                        <a id="RequestAppointment" class="no-float request-day-link btn-dark-outline" exceptrestricteddepartments="" data-ajax="true" data-ajax-update="#accordionContainer" href="/MyTimeOff/RequestAppointment?type=Appointment">Request Appointment</a>
+                    </div>
+
+        
+
+
+<div class="accordionSection">
+    <accordion id="accordionContainer">
+    </accordion>
+</div>
+
+    <div class="table table-requests table-Holiday" style="display: table;">
+
+                <div class="header" style="margin-top: 35px;">
+                                <h3>Reserve List</h3>
+                </div>
+                <div class="row header">
+                    <div class="cell">From Date</div>
+                        <div class="cell">To Date</div>
+
+                    <div class="cell">Duration</div>
+                        <div class="cell align-text-center">Position On List</div>
+
+                        <div class="cell">Action</div>
+                </div>
+                    <div class="row">
+                            <div class="cell" data-title="From Date">
+                                Tue 06 Jul 2021
+                            </div>
+                            <div class="cell" data-title="To Date">
+                                Tue 06 Jul 2021
+                            </div>
+                            <div class="cell" data-title="Duration">
+                                1 Day(s)
+                            </div>
+
+                            <div class="cell align-text-center" data-title="Reason"></div>
+
+                            <div class="cell"></div>
+                    </div>
+                <div class="header" style="margin-top: 35px;">
+                            <h3>Cancelled</h3>
+                </div>
+                <div class="row header">
+                    <div class="cell">From Date</div>
+                        <div class="cell">To Date</div>
+
+                    <div class="cell">Duration</div>
+                        <div class="cell"></div>
+
+                        <div class="cell"></div>
+                </div>
+                    <div class="row">
+                            <div class="cell" data-title="From Date">
+                                Mon 14 Jun 2021
+                            </div>
+                            <div class="cell" data-title="To Date">
+                                Mon 14 Jun 2021
+                            </div>
+                            <div class="cell" data-title="Duration">
+                                1 Day(s)
+                            </div>
+
+                            <div class="cell align-text-center" data-title="Reason"></div>
+
+                            <div class="cell"></div>
+                    </div>
+                    <div class="row">
+                            <div class="cell" data-title="From Date">
+                                Mon 28 Jun 2021
+                            </div>
+                            <div class="cell" data-title="To Date">
+                                Mon 28 Jun 2021
+                            </div>
+                            <div class="cell" data-title="Duration">
+                                1 Day(s)
+                            </div>
+
+                            <div class="cell align-text-center" data-title="Reason"></div>
+
+                            <div class="cell"></div>
+                    </div>
+                    <div class="row">
+                            <div class="cell" data-title="From Date">
+                                Fri 02 Jul 2021
+                            </div>
+                            <div class="cell" data-title="To Date">
+                                Fri 02 Jul 2021
+                            </div>
+                            <div class="cell" data-title="Duration">
+                                1 Day(s)
+                            </div>
+
+                            <div class="cell align-text-center" data-title="Reason"></div>
+
+                            <div class="cell"></div>
+                    </div>
+                    <div class="row">
+                            <div class="cell" data-title="From Date">
+                                Thu 19 Aug 2021
+                            </div>
+                            <div class="cell" data-title="To Date">
+                                Thu 19 Aug 2021
+                            </div>
+                            <div class="cell" data-title="Duration">
+                                1 Day(s)
+                            </div>
+
+                            <div class="cell align-text-center" data-title="Reason"></div>
+
+                                <div class="cell"></div>
+                    </div>
+    </div>
+    <div class="table table-requests table-Lieu" style="display: none;">
+
+    </div>
+    <div class="table table-requests table-Appointment" style="display: none;">
+
+                <div class="header" style="margin-top: 35px;">
+                            <h3>Booked</h3>
+                </div>
+                <div class="row header">
+                    <div class="cell">From Date</div>
+                        <div class="cell">To Date</div>
+
+                    <div class="cell">Duration</div>
+                        <div class="cell align-text-center">Reason</div>
+
+                        <div class="cell">Action</div>
+                </div>
+                <div class="header" style="margin-top: 35px;">
+                            <h3>Cancelled</h3>
+                </div>
+                <div class="row header">
+                    <div class="cell">From Date</div>
+                        <div class="cell">To Date</div>
+
+                    <div class="cell">Duration</div>
+                        <div class="cell align-text-center">Reason</div>
+
+                        <div class="cell"></div>
+                </div>
+                    <div class="row">
+                            <div class="cell" data-title="From Date">
+                                Mon 28 Jun 2021
+                            </div>
+                            <div class="cell" data-title="To Date">
+                                Mon 28 Jun 2021
+                            </div>
+                            <div class="cell" data-title="Duration">
+                                0.13 Day(s)
+                            </div>
+
+                            <div class="cell align-text-center" data-title="Reason">Doctor</div>
+
+                            <div class="cell"></div>
+                    </div>
+    </div>
+
+
+    </div>
+</div>
+
+
+<script>
+
+    $(document).ready(function () {
+
+        var timOffToggle = $('.toggle-timeOff').find('p');
+        var timeOffActive = 'toggle-timeOff--active';
+
+        $('.toggle-timeOff p').click(function () {
+
+            var id = sessionStorage.MyTimeOff = $(this).attr('id');
+            timOffToggle.removeClass(timeOffActive);
+            $(this).addClass(timeOffActive);
+
+            var targetEl = '.table-' + $(this).attr('id');
+            targetEl = targetEl.replace(/\s+/g, '-');
+            $('.table-requests').not(targetEl).hide();
+            $(targetEl).css('display', 'table');
+            if (id === 'Lieu') {
+                $('#holidaySummary').hide();
+                $('#holidayBtnDiv').hide();
+                $('#appointmentSummary').hide();
+                $('#appointmentBtnDiv').hide();
+                $('#lieuSummary').show();
+                $('#lieuBtnDiv').show();
+            } else if (id === 'Appointment') {
+                $('#lieuSummary').hide();
+                $('#lieuBtnDiv').hide();
+                $('#holidaySummary').hide();
+                $('#holidayBtnDiv').hide();
+                $('#appointmentBtnDiv').show();
+                $('#appointmentSummary').show();
+            } else if (id === 'Holiday') {
+                $('#lieuSummary').hide();
+                $('#lieuBtnDiv').hide();
+                $('#appointmentSummary').hide();
+                $('#appointmentBtnDiv').hide();
+                $('#holidaySummary').show();
+                $('#holidayBtnDiv').show();
+            }
+        });
+
+        $("._cancel").click(function () {
+            var parentId = this.id.substring(7);
+            var btnId = "#btn_" + parentId;
+            var accId = "#acc_" + parentId;
+
+            if ($(accId).is(":visible")) {
+                $(accId).hide();
+            }
+            if ($(accId).is(":hidden")) {
+                $(accId).show();
+            }
+            $(btnId).hide();
+
+        });
+        $("._closeAcc").click(function () {
+            var buttonId = this.id;
+            var accId = "#acc_" + buttonId.substring(6);
+            var parentId = "#btn_" + buttonId.substring(6);
+
+            if ($(accId).is(":hidden")) {
+                $(accId).show();
+            }
+            if ($(accId).is(":visible")) {
+                $(accId).hide();
+            }
+            $(parentId).show();
+        });
+        if (sessionStorage.MyTimeOff == null) {
+            timOffToggle.first().click();
+        } else {
+            $('#' + sessionStorage.MyTimeOff).click();
+        }
+    });
+
+</script>
+    </div>
+
+</div>
+
+
+    
+    <div class="progressSpinner" style="display: none;"></div>
+
+<script>
+    $(function () {
+        var $loading = $('.progressSpinner').hide();
+        $(document)
+            .ajaxStart(function () {
+                $loading.show();
+            })
+            .ajaxStop(function () {
+                //setTimeout(() => {$loading.hide();}, 2000); 
+                $loading.css("display", "none");
+
+            });
+    })
+</script>
+    <div id="modal-container"></div>
+
+    <script src="/js/site.js?v=6mDKDZ3256CPgUG21XIMAl5-7IzLuRiXY5Hyrr1o2FY">
+    </script>
+    <script src="/js/datepicker.min.js?v=sDkngPRtG13GUwXC2lqAstMfdfYH4snQju5831kYx6g">
+    </script>
+    
+    <footer>
+            <div id="holidaySummaryFooter" class="footer-dates">
+                
+
+
+    <div class="rota-hours-min">
+                <p>Holidays requested <span>1 Day(s)</span></p>
+                <p>Holidays remaining <span>2.2 Day(s)</span></p>    
+                <p>Holiday allowance <span>3.2 Day(s)</span></p>
+    </div>
+
+
+            </div>
+    </footer>
+
+</body></html>

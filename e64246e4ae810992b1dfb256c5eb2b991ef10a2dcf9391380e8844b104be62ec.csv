@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Booking Time Off","Booking Time in Lieu","SUCCESS","2021-07-07T13:22:24.5491284+01:00[Europe/London]","0.0","2.71"
+"Booking Time Off","Checking for Time in Lieu booking conflict","SUCCESS","2021-07-07T13:22:27.2786231+01:00[Europe/London]","0.0","2.79"
+"Booking Time Off","Cancelling booked Time In Lieu","ERROR","2021-07-07T13:22:30.0886884+01:00[Europe/London]","0.0","7.36"
